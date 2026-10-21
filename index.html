@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jannah Claire H. Caruana | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Home">JC</a>
+  <nav aria-label="Main">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme" id="theme" aria-label="Switch to dark mode" aria-pressed="false">
+    <span class="sun">Light</span><span class="moon">Dark</span>
+  </button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hello, I'm</p>
+    <h1>Jannah Claire H. Caruana</h1>
+    <p class="typed-line"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+    <p class="lead">BSIT student, CHED scholar, and the youngest in the family. Scroll down, there is a small quiz waiting for you.</p>
+    <div class="cta">
+      <a class="btn primary" href="#quiz">Take the quiz</a>
+      <a class="btn" href="#about">Meet me</a>
+    </div>
+  </div>
+  <div class="photo-wrap">
+    <div class="photo">
+      <!-- Put your photo in this folder and name it photo.jpg -->
+      <img src="photo.jpg" alt="Portrait of Jannah Claire H. Caruana" onerror="this.remove()">
+      <span class="initials" aria-hidden="true">JC</span>
+    </div>
+    <span class="badge">CHED Scholar</span>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>Who I am, depending on the day</h2>
+  <p class="sub">Tap a role to see what it means to me.</p>
+  <div class="tabs" role="tablist" aria-label="My roles">
+    <button role="tab" aria-selected="true" data-tab="0">Student</button>
+    <button role="tab" aria-selected="false" data-tab="1">Writer</button>
+    <button role="tab" aria-selected="false" data-tab="2">Youth council</button>
+    <button role="tab" aria-selected="false" data-tab="3">Lector</button>
+  </div>
+  <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="skills" class="section alt">
+  <h2>What I bring to a team</h2>
+  <p class="sub">Press a skill to see how I use it.</p>
+  <div class="skills">
+    <button class="skill" aria-expanded="false">
+      <span class="skill-name">Working under pressure</span>
+      <span class="meter"><i data-level="90"></i></span>
+      <span class="skill-more">Deadlines do not scare me. I plan, prioritize, and keep a calm head.</span>
+    </button>
+    <button class="skill" aria-expanded="false">
+      <span class="skill-name">Writing</span>
+      <span class="meter"><i data-level="85"></i></span>
+      <span class="skill-more">I write articles and posts for our parish Social Communications Ministry.</span>
+    </button>
+    <button class="skill" aria-expanded="false">
+      <span class="skill-name">Encoding</span>
+      <span class="meter"><i data-level="88"></i></span>
+      <span class="skill-more">Fast and accurate data entry, with a habit of double-checking my work.</span>
+    </button>
+  </div>
+</section>
+
+<section id="hobbies" class="section">
+  <h2>When I'm off duty</h2>
+  <p class="sub">Tap a card to flip it.</p>
+  <div class="cards">
+    <button class="flip" aria-label="K-drama card">
+      <span class="face front"><b class="ico">&#127916;</b><span>K-Drama</span></span>
+      <span class="face back">Always one more episode away from "just one more."</span>
+    </button>
+    <button class="flip" aria-label="Food trips card">
+      <span class="face front"><b class="ico">&#127836;</b><span>Trying foods</span></span>
+      <span class="face back">New place, new plate. I am always up for a taste test.</span>
+    </button>
+    <button class="flip" aria-label="Pets and family card">
+      <span class="face front"><b class="ico">&#128062;</b><span>Pets &amp; family</span></span>
+      <span class="face back">My favorite way to recharge is with the people and pets I love.</span>
+    </button>
+  </div>
+</section>
+
+<section id="quiz" class="section alt">
+  <h2>How well do you know me?</h2>
+  <p class="sub">Three quick questions. No pressure.</p>
+  <div class="quiz" id="quiz-box" aria-live="polite"></div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Let's connect</h2>
+  <p class="sub">Thanks for staying. Here is where you can find me.</p>
+  <ul class="contact">
+    <!-- Replace the links below with your real ones -->
+    <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+    <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+    <li><span>Dalaguete, Cebu</span></li>
+  </ul>
+</section>
+</main>
+
+<footer>&copy; 2026 Jannah Claire H. Caruana. Made for HCI.</footer>
+<script src="script.js"></script>
+</body>
+</html>
